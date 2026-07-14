@@ -18,127 +18,115 @@
 
 ---
 
-### 🔍 SME Feedback from the Break Through Tech Evaluation Team
+## 📋 BTT Internal Evaluation Notes
+*(This section is for BTT staff and CAs only — remove before sharing with students)*
 
-*Challenge Advisor: Please address the following feedback by editing this page. Your AI Studio Coach can help make project adjustments as needed, too. In addition to the grey section above, this section should be removed before sharing the repo with your student team.*
+### Technical Vetting
+| Check | Status | Notes |
+| :--- | :--- | :--- |
+| Python Compatibility | 🟢 | The project uses Python-based ML techniques and libraries, making it well-suited to students' skill sets. |
+| Data Readiness | 🟡 | While the estimated data size is manageable, there may be concerns regarding the accessibility and cleaning of proprietary and hybrid datasets, which could complicate the initial stages. |
+| Resource Check | 🟡 | The Google Colab free tier can accommodate initial work, but reliance on additional compute resources and API keys may pose access challenges for all students. |
+
+### Internal Scores
+- **Student Fit Score:** 7/10
+- **Technical Depth Score:** 8/10
+- **Overall Recommendation:** REVISE
+
+### Advisor Feedback Draft
+The project presents a compelling intersection of creative arts and AI technology, showcasing innovative applications in intellectual property management. Students should ensure they fully understand the nuances of both the data they are working with and the ML models they intend to implement. Additionally, I recommend focusing on concrete examples during prototype development to align expectations with deliverables, especially in terms of the prediction module.
 
 ---
 
-# [Project Title]
+# Hollywood Studios Secure AI and Chain of Title
 
-**Company / Org:** [Company / Org Name]  
-**Challenge Advisor:** [Name, Title, Email]  
-**Program:** Break Through Tech AI Studio - Fall 2026
+**Company / Org:** Chambers Capital Ventures  
+**Challenge Advisor:** Chris Chambers, chrisc@theeinsteinbridge.com  
+**Program:** Break Through Tech AI Studio - Fall 2026  
 
 ---
 
-## 🏢 About [Company / Org Name]
-
-[2-3 sentences about your company: what you do, your industry, etc. You may also choose to specify your specific department or team.]
+## 🏢 About Chambers Capital Ventures
+Chambers Capital Ventures is an investment and development firm operating at the intersection of media, finance, and advanced technology. The team focuses on optimizing creative workflows and protecting intellectual property within the entertainment industry through the implementation of secure AI governance systems.
 
 ---
 
 ## 🎯 The Challenge
-
 ### Project Summary
-[In 2-3 sentences, describe what you're asking the team to do. Be specific about the type of data, ML techniques, and potential impact.]
-
-> **Example:** "In this project, your team will use customer transaction data and classification algorithms to build a model that predicts which users are likely to churn. This will help our retention team prioritize outreach."
+This project aims to build the Vault™ governance engine and integrate it with CreativeOS™ to facilitate secure, AI-driven creative workflows. By utilizing proprietary provenance logs, structured IP records, and public market demand datasets, the team will develop a hybrid ML architecture to track intellectual property rights and predict commercial streaming licensing outcomes.
 
 ### Success Criteria
-[What does success look like? Describe evaluation metrics (accuracy, F1 score, etc.) or qualitative outcomes that would make this project valuable to your company.]
+Delivery of a functional prototype of the Vault™ + CreativeOS™ secure AI ecosystem with a working proof-of-concept demonstrating secure asset upload, AI-governed interaction logging, provenance tracking, and chain-of-title maintenance. A functional Streaming Deals Prediction module that accurately projects licensing terms. Positive evaluation on technical quality, innovation, IP protection, and usability.
 
 ### Project Milestones
-
-Use these milestones to guide your work. Your team will create a **GitHub Projects board** to track tasks within each milestone.
-
+Use these milestones to guide your work. Your team will create a GitHub Projects board to track tasks within each milestone.
 | Month | Milestone | Key Activities |
 |-------|-----------|----------------|
-| **September** | [e.g., Data Understanding] | [e.g., Explore dataset, handle missing values, document findings] |
-| **October** | [e.g., Model Development] | [e.g., Train baseline model, experiment with approaches, iterate] |
-| **November** | [e.g., Evaluation & Presentation] | [e.g., Finalize model, prepare presentation, document results] |
+| **September** | Data Exploration & Preprocessing | Standardizing hybrid CSV/JSON/SQL schemas and building robust cleaning pipelines for disparate IP and box office records. |
+| **October** | Feature Engineering & Baseline Modeling | Developing time-series features for market demand and applying NLP techniques to extract metadata from creative assets. |
+| **November** | Model Optimization & Evaluation | Performing hyperparameter tuning on predictive models and conducting rigorous validation against historical chain-of-title logs. |
+| **December** | Insights, Deliverables & Presentation | Finalizing the UI/UX for the proof-of-concept prototype and preparing executive reports on licensing value projections. |
 
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
 ---
 
 ## 📊 Dataset
-
-**Name and Source:** [Dataset name and where it's from]  
-**Format:** [e.g., CSV, JSON, images]  
-**Size:** [Approximate size in MB/GB]  
-**Location:** [Link to dataset or instructions for accessing it]
+**Name and Source:** Chambers Capital IP Provenance & Industry Market Data  
+**Format:** CSV, TSV, JSON, SQL, PNG/JPG  
+**Size:** 1gb to 5gb  
+**Location:** Secure S3 bucket and encrypted database exports provided at project kickoff.  
 
 ### Key Details
-- [Brief description of what's in the data]
-- [Any known limitations or preprocessing needed]
-- [Link to data dictionary or documentation, if available]
+- Proprietary provenance and interaction log data, public entertainment performance datasets (box office, audience demand signals), creative asset metadata, provenance logs, interaction metadata, and hybrid structured/unstructured IP records. Formats include CSV/TSV, JSON, Image files (.png, .jpg), and database exports (SQL dump).
+- Teams must implement strict deduplication for hybrid data sources and perform categorical encoding for unstructured IP metadata fields to ensure consistency across the prediction engine.
 
 ---
 
 ## 🛠️ Suggested Approach
-
-**ML Problem Type:** [e.g., Classification, Regression, NLP, Computer Vision, LLM/RAG]
-
+**ML Problem Type:** Classification, Regression, Time Series, NLP & RAG, Multi-Agent Systems  
 **Recommended Libraries:**
-- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
-
-**Evaluation Metrics:**
-- [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
+- Natural language processing (NLP)
+- classification models
+- time-series analysis
+- hybrid inference techniques
+- regression
+- Large Language Models (LLMs)/Generative AI
+- and Transfer Learning / Pre-trained Models.
+**Evaluation Metrics:** Precision and recall for IP provenance tracking; Mean Absolute Percentage Error (MAPE) for streaming deal predictions; system latency and security audit compliance scores.
 
 ---
 
 ## 📚 Resources to Get Started
-
 The following resources will help your team understand the problem space and potential technical approaches for this project:
-
 **Background Reading:**
-- [e.g., Link to an article or blog post about the problem domain]
-- [e.g., Link to an industry report or case study]
-
+- Industry standards on Digital Asset Management (DAM) and blockchain-based provenance tracking.
 **Technical Tutorials:**
-- [e.g., Link to a free tutorial on the ML technique(s) involved]
-- [e.g., Link to documentation for a key library or tool]
-
+- Documentation on RAG (Retrieval-Augmented Generation) frameworks for secure data retrieval.
 **Code Examples:**
-- [e.g., Link to a relevant GitHub repo]
-- [e.g., Link to a sample implementation or starter code]
-
-**Other:**
-- [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
-
-*Feel free to explore beyond these, and share anything interesting you find with me!*
+- Boilerplate repository for secure API integration and time-series forecasting models provided by internal partners.
 
 ---
 
-## 🤝 How We'll Work Together (v2)
-
-**Official check-ins:** During our biweekly 45-minute AI Studio Lab Section meeting block (2nd and 4th week of every month)
-
- **Other ways to reach out to me with questions:** 
-* [e.g., Your team's channel within Break Through Tech’s Discord space]
-* [e.g., Email; please copy your teammates and AI Studio Coach]
-* [e.g., Request a team check-in on Zoom]
-* [Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.]
-
-> 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
-
-**Recommended free coding / collaboration tools**
-* […]
-* […]
+## 🤝 How We'll Work Together
+**Check-ins:** During our biweekly 60-min AI Studio Lab Section meeting block (2nd and 4th week of every month)  
+**Communication:** Slack and Corporate Email  
+**Response time:** 24-48 business hours  
+**Recommended Tools:**
+- **Coding:** Google Colab Free Tier  
+- **Collaboration:** GitHub, Notion  
+- **Virtual Meetings:** Zoom, Google Meet  
 
 ---
 
 ## 🚀 Getting Started
+1. **Review this overview document** and note any questions for our first meeting.
+2. **Begin reviewing the dataset** using the link provided in the Dataset section.
+3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects).
 
-1. **Review this overview document** and note any questions for our first meeting
-2. **Begin reviewing the dataset** using the link above
-3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-
-I’m excited to work with you!
+I'm excited to work with you!
 
 ---
 
 ## ❓ Questions?
-
-Please bring any questions to our first meeting during the week of August 24th (Break Through Tech’s Bridge to Studio - Session C). 
+Please bring any questions to our first meeting during the week of August 24th (Break Through Tech's Bridge to Studio - Session B).
